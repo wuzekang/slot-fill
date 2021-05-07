@@ -21,7 +21,7 @@ npm start
 ### Toolbar.js
 
 ```jsx
-import { createSlot, SlotFillProvider } from 'slot-fill';
+import { createSlot } from 'slot-fill';
 
 const Slot = createSlot();
 
@@ -32,7 +32,7 @@ const Toolbar = () => (
 )
 
 Toolbar.Item = (props) => (
-  <Slot.Fill name="Toolbar.Item">
+  <Slot.Fill>
     <button>{ props.label }</button>
   </Slot.Fill>
 )
